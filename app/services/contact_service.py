@@ -72,7 +72,7 @@ class Contact:
         for key in contacts:
             toEmail = contacts[key]['email']
             message = 'Olá '+ contacts[key]['name'] + ' gostaria de testar o envio dos convites, obrigado \n Ps:. Obrigado Pelo Teste \n'
-            subject = 'Convite de ' + contacts[key]['name'] + ' para prêmio de Mídia' 
+            subject = 'Convite de ' + contacts[key]['name']  
             msg = MIMEMultipart()
             msg['From'] = fromEmail
             msg['To'] = toEmail
